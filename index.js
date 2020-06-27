@@ -138,8 +138,10 @@ function mapPerLine(content, f) {
 
 function convertUpperLower(content, lineIndex) {
   let output = "";
-  for (const c of contents) {
+  let index = 0;
+  for (const c of content) {
     output += (index + lineIndex) % 2 === 0 ? c.toLowerCase() : c.toUpperCase();
+    index++;
   }
   return output;
 }
@@ -169,6 +171,10 @@ $(() => {
     $('#output-troll-content').html(formatLineBreaks(trollNameShort, convert(troll, content)));
 
     $('#input-area').hide();
-    $('#output-area').show();
+    $('#output-container').show();
   });
+  $('#return').on('click', () => {
+    $('#input-area').show();
+    $('#output-container').hide();
+  })
 });
