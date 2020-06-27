@@ -6,21 +6,32 @@
   <div id="header">
     <img id="header-image" src="troll-speak.png"/>
   </div>
-  <textarea id="text-input" rows="30"></textarea>
-  <select id="troll-select">
-    <option value="karkat">Karkat</option>
-    <option value="terezi">Terezi</option>
-    <option value="gamzee">Gamzee</option>
-    <option value="tavros">Tavros</option>
-    <option value="vriska">Vriska</option>
-    <option value="kanaya">Kanaya</option>
-    <option value="equius">Equius</option>
-    <option value="aradia">Aradia</option>
-    <option value="nepeta">Nepeta</option>
-    <option value="eridan">Eridan</option>
-    <option value="feferi">Feferi</option>
-    <option value="sollux">Sollux</option>
-  </select>
-  <button id="convert" type="button">==&gt;</button>
+  <div id="input-area">
+    <textarea id="text-input" rows="30"></textarea>
+    <select id="troll-select">
+      <option value="karkat">Karkat</option>
+      <option value="terezi">Terezi</option>
+      <option value="gamzee">Gamzee</option>
+      <option value="tavros">Tavros</option>
+      <option value="vriska">Vriska</option>
+      <option value="kanaya">Kanaya</option>
+      <option value="equius">Equius</option>
+      <option value="aradia">Aradia</option>
+      <option value="nepeta">Nepeta</option>
+      <option value="eridan">Eridan</option>
+      <option value="feferi">Feferi</option>
+      <option value="sollux">Sollux</option>
+    </select>
+    <button id="convert" type="button">==&gt;</button>
+  </div>
+  <div id="output-area">
+    <span id="output-troll-name"></span> began trolling <span id="output-human-name">stupidHomosapien [SH]</span>
+    <br>
+    <br>
+    <span id="output-troll-content"></span>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
